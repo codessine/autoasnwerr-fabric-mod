@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "autoanswer",
+  "version": "${version}",
+  "name": "AutoAnswer",
+  "description": "Automatically responds to specific chat messages in Minecraft",
+  "authors": ["AutoAnswer"],
+  "contact": {
+    "homepage": "https://github.com/autoanswer/autoanswer",
+    "sources": "https://github.com/autoanswer/autoanswer"
+  },
+  "license": "MIT",
+  "icon": "assets/autoanswer/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.autoanswer.AutoAnswerClient"]
+  },
+  "mixins": ["autoanswer.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
